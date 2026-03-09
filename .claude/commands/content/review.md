@@ -43,7 +43,10 @@ Workspace and content: $ARGUMENTS
   >> Fix issues? (y/n)
 ```
 
-5. If issues found, suggest fixes
-6. Re-run gates after fixes
-7. When all gates pass: move to content/approved/
+5. Check execution mode from workspace.config.md:
+   - **Interactive:** Present with approval gate above. Wait for user to confirm fixes.
+   - **Auto:** Auto-approve fixes, apply them, show `⚡ Auto-approved: fixes applied`, log in logs/decisions.md
+6. If issues found, suggest fixes
+7. Re-run gates after fixes
+8. When all gates pass: move to content/approved/
 </process>

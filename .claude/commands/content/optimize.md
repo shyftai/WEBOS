@@ -44,7 +44,9 @@ Workspace and target: $ARGUMENTS
    - Improve shareability
 
 6. Present optimized version with tracked changes
-7. Ask for approval
+7. Check execution mode from workspace.config.md:
+   - **Interactive:** Ask for approval: `>> Approve optimizations? (approve / edit / reject)`
+   - **Auto:** Auto-approve, save optimized version, show `⚡ Auto-approved: optimizations applied`, log in logs/decisions.md
 8. Save optimized version
 9. Update LEARNINGS.md with what was changed and why
 </process>

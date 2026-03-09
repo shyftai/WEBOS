@@ -40,7 +40,9 @@ Workspace and brief: $ARGUMENTS
    - [ ] Channel check — formatted for target channel
 
 7. Display the draft with quality gate results
-8. Ask for approval: `>> Approve? (approve / edit / rewrite / reject)`
+8. Check execution mode from workspace.config.md:
+   - **Interactive:** Ask for approval: `>> Approve? (approve / edit / rewrite / reject)`
+   - **Auto:** Auto-approve, save to content/approved/, show `⚡ Auto-approved: content saved`, log in logs/decisions.md
 9. Save approved content to content/approved/
 10. Update CALENDAR.md and ROADMAP.md
 11. Suggest: `>> /content:repurpose — transform for other channels`

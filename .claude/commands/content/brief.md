@@ -81,7 +81,10 @@ Workspace and topic: $ARGUMENTS
   >> Approve brief? (y/n/edit)
 ```
 
-6. Save approved brief to assets/briefs/
-7. Add to CALENDAR.md and ROADMAP.md
-8. Display next step: `>> /content:write {workspace} {brief-name}`
+6. Check execution mode from workspace.config.md:
+   - **Interactive:** Present with approval gate above. On approval, save to assets/briefs/
+   - **Auto:** Auto-approve, save to assets/briefs/, show `⚡ Auto-approved: brief saved`, log in logs/decisions.md
+7. Save approved brief to assets/briefs/
+8. Add to CALENDAR.md and ROADMAP.md
+9. Display next step: `>> /content:write {workspace} {brief-name}`
 </process>

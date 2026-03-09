@@ -2,6 +2,13 @@
 
 Sensible defaults for everything. All overridable per workspace.
 
+## Workspace defaults
+
+| Setting | Default | Override in |
+|---------|---------|------------|
+| Execution mode | interactive | workspace.config.md |
+| Collaboration mode | solo | workspace.config.md |
+
 ## Content defaults
 
 | Setting | Default | Override in |

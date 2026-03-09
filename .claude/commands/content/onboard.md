@@ -42,8 +42,23 @@ Workspace name: $ARGUMENTS
   >> Team — multiple people, shared via Supabase
 ```
 
+## Block 1.5: Execution mode
+5. Ask: "How should I handle approvals?"
+   - **Interactive** (default) — I'll confirm each major decision before proceeding
+   - **Auto** — I'll auto-approve and keep moving. Only stops for publishing, compliance/legal violations, and budget overages.
+
+   Role-based defaults:
+   - **Content Creator** → suggest auto (they want speed)
+   - **Content Strategist** → default interactive (strategy needs precision)
+   - **Social Media Manager** → suggest auto (high-volume output)
+   - **SEO Specialist** → default interactive (technical decisions need review)
+   - **Head of Content** → default interactive (reviewing strategy)
+   - **Agency** → default interactive (client work needs checkpoints)
+
+   Save to workspace.config.md as `**Execution mode:** auto` or `**Execution mode:** interactive`
+
 ## Block 2: Brand identity
-5. Guided interview to fill BRAND.md:
+6. Guided interview to fill BRAND.md:
    - Brand name, URL, industry
    - Mission and values
    - Voice attributes (what you are vs aren't)
@@ -51,51 +66,51 @@ Workspace name: $ARGUMENTS
    - Visual identity basics
 
 ## Block 3: Audience
-6. Guided interview to fill AUDIENCE.md:
+7. Guided interview to fill AUDIENCE.md:
    - Primary audience segment
    - Demographics, pain points, goals
    - Where they consume content
    - Content preferences
 
 ## Block 4: Content pillars
-7. Guided interview to fill PILLARS.md:
+8. Guided interview to fill PILLARS.md:
    - 3-5 core themes
    - Why each matters
    - Content types per pillar
    - Target balance %
 
 ## Block 5: Tone of voice
-8. Guided interview to fill TOV.md:
+9. Guided interview to fill TOV.md:
    - Voice spectrum positioning
    - Writing rules
    - Channel-specific adjustments
    - Words to use/avoid
 
 ## Block 6: Channels
-9. Guided interview to fill CHANNELS.md:
+10. Guided interview to fill CHANNELS.md:
    - Active channels and platforms
    - Posting frequency per channel
    - Content types per channel
    - Primary metrics per channel
 
 ## Block 7: SEO (skip for Social Media Manager role)
-10. Guided interview to fill SEO-STRATEGY.md:
+11. Guided interview to fill SEO-STRATEGY.md:
     - Domain and current metrics
     - Initial keyword clusters
     - Competitor SEO overview
     - Goals
 
 ## Block 8: Calendar
-11. Set up initial CALENDAR.md:
+12. Set up initial CALENDAR.md:
     - Publishing cadence per channel
     - Recurring content slots
     - Key upcoming dates
 
 ## Output
-12. Create workspace folder with all files from _template/
-13. Fill in interview answers
-14. Create initial ROADMAP.md with first content ideas
-15. Display summary:
+13. Create workspace folder with all files from _template/
+14. Fill in interview answers
+15. Create initial ROADMAP.md with first content ideas
+16. Display summary:
 ```
   ┌─ WORKSPACE CREATED ─────────────────────────────┐
   │                                                   │

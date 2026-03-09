@@ -53,6 +53,9 @@ Workspace and content: $ARGUMENTS
   >> Approve all / Edit / Select specific
 ```
 
-7. Save approved versions to content/approved/
-8. Add to CALENDAR.md for scheduling
+7. Check execution mode from workspace.config.md:
+   - **Interactive:** Present with approval gate above. Wait for user selection.
+   - **Auto:** Auto-approve all versions, save to content/approved/, show `⚡ Auto-approved: {n} versions saved`, log in logs/decisions.md
+8. Save approved versions to content/approved/
+9. Add to CALENDAR.md for scheduling
 </process>

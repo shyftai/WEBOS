@@ -32,17 +32,21 @@ Workspace and content: $ARGUMENTS
   └─────────────────────────────────────────────────┘
 ```
 
-5. If publishing via API (WordPress, Buffer, etc.):
+5. **HARD GATE — always stops, even in auto mode.**
+   Publishing pushes live content. Always require explicit approval before proceeding.
+   Show: `>> Confirm publish? This is a hard gate — auto mode does not skip this. (publish / schedule / cancel)`
+
+6. If publishing via API (WordPress, Buffer, etc.):
    - Confirm platform and credentials
    - Preview the formatted version
    - Publish or schedule
 
-6. If manual publishing:
+7. If manual publishing:
    - Provide copy-ready formatted version
    - Include all metadata
    - Checklist for manual steps
 
-7. Update CALENDAR.md (mark as published)
-8. Move content from approved/ to published/
-9. Suggest: "Set a reminder to check performance in 7 days? /content:debrief"
+8. Update CALENDAR.md (mark as published)
+9. Move content from approved/ to published/
+10. Suggest: "Set a reminder to check performance in 7 days? /content:debrief"
 </process>

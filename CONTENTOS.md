@@ -30,6 +30,7 @@ Then immediately scan for workspaces and tools, and display the system status:
   │                                                    │
   │  Workspaces:  {list workspace folders or "none — run /content:onboard"}
   │  Mode:        {solo / team}                        │
+  │  Execution:   {interactive / auto}                 │
   │                                                    │
   │  MCP servers:                                      │
   │  [x] Exa (research)      [ ] Firecrawl (scraping)  │
@@ -195,6 +196,37 @@ workspaces/
       INDEX.md        ← what's loaded and priority files
       {extra context files}
 ```
+
+---
+
+## Execution mode
+
+CONTENT:OS supports two execution modes, configured per workspace in `workspace.config.md`:
+
+### Interactive mode (default)
+- Confirms each major decision with an approval gate
+- Shows full context before proceeding
+- Pauses at every checkpoint for user input
+- Best for: new workspaces, learning the system, high-stakes content
+
+### Auto mode
+- Auto-approves most decisions — just executes
+- Skips approval gates for content drafts, brief approvals, review results, optimization suggestions, and repurpose versions
+- Still shows results inline so you can review, but does not pause
+- Only stops for **hard gates** (non-skippable):
+  - `/content:publish` — always requires explicit approval before pushing live content
+  - Compliance/legal violations — never auto-skip (copyright, licensing, legal claims)
+  - Budget overages — always flags if tool spend exceeds workspace budget
+
+**How it works in commands:**
+- Commands that show `>> Approve / Edit / Reject` gates: in auto mode, auto-approve and continue. Log the auto-approval in `logs/decisions.md`.
+- Commands that ask clarifying questions: in auto mode, use sensible defaults from `defaults.md` and proceed. Log what was assumed.
+- Multi-step workflows (brief → write → review → publish): in auto mode, chain automatically. Stop only at hard gates.
+
+**Toggling:**
+- Set during onboarding, or change anytime in `workspace.config.md`
+- `**Execution mode:** auto` or `**Execution mode:** interactive`
+- Can also toggle mid-session: just say "switch to auto" or "switch to interactive"
 
 ---
 

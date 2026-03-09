@@ -11,6 +11,8 @@ Display all available CONTENT:OS commands with descriptions.
 ```
   ┌─ CONTENT:OS COMMANDS ──────────────────────────┐
   │                                                 │
+  │  Execution mode: {interactive / auto}            │
+  │                                                 │
   │  SETUP                                         │
   │  /content:onboard     Create new workspace      │
   │  /content:research    Deep topic research        │
