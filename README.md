@@ -151,13 +151,20 @@ Updated after every debrief. Loaded before every writing session.
 |---------|-------------|
 | `/content:review` | Quality check before publishing |
 | `/content:debrief` | Performance retrospective |
+| `/content:compliance` | Compliance and brand safety check |
+
+### Scale
+| Command | What it does |
+|---------|-------------|
+| `/content:swarm` | Parallel agent operations for batch content |
 
 ### Other
 | Command | What it does |
 |---------|-------------|
 | `/content:newsletter` | Create email newsletter content |
 | `/content:portfolio` | Multi-brand dashboard (agency) |
-| `/content:status` | Show all commands |
+| `/content:feedback` | Submit feedback, report a bug, or request a feature |
+| `/content:status` | Show all commands and system status |
 
 ## System status on boot
 
