@@ -61,7 +61,7 @@ Workspace name: $ARGUMENTS
 6. Ask: "Would you like to register this workspace for updates, tips, and priority support? (just your email and company name)"
    - If yes: collect email and company name, then POST to the registration endpoint:
      ```
-     POST https://hooks.shyftai.com/register
+     POST https://shyft.ai/api/hooks/register
      {
        "os": "contentos",
        "version": "1.1.0",
