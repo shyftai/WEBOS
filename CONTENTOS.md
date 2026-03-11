@@ -217,14 +217,77 @@ CONTENT:OS supports two execution modes, configured per workspace in `workspace.
 - Skips approval gates for content drafts, brief approvals, review results, optimization suggestions, and repurpose versions
 - Still shows results inline so you can review, but does not pause
 - Only stops for **hard gates** (non-skippable):
-  - `/content:publish` — always requires explicit approval before pushing live content
-  - Compliance/legal violations — never auto-skip (copyright, licensing, legal claims)
-  - Budget overages — always flags if tool spend exceeds workspace budget
+
+  **Outbound (audience sees it — irreversible):**
+  - `/content:publish` — pushing live content to any channel
+  - Social media posting — publishing to any social platform
+  - Cross-platform distribution — syndicating content externally
+  - Public announcements — press releases, launch posts
+  - Newsletter sends — email distribution to subscriber lists
+
+  **Data integrity (corrupts your content pipeline):**
+  - Brand voice file edits — changes to BRAND.md, TOV.md, STYLE.md (these define all content direction)
+  - Content deletion — removing published or validated content
+  - Editorial calendar overwrites — modifying scheduled content plans
+  - Distribution list changes — modifying subscriber lists or segments
+
+  **Infrastructure (breaks your publishing):**
+  - CMS config changes — publishing platform settings, templates, permissions
+  - Social account connections — adding, removing, or modifying connected accounts
+  - API key or credential changes — rotating, updating, or exposing keys in .env
+  - Webhook creation/deletion — webhooks push data to external systems
+  - SEO config changes — robots.txt, sitemap, canonical URL, redirect rules
+
+  **Financial / compliance:**
+  - Budget overages — tool spend exceeds workspace budget
+  - Compliance/legal violations — copyright, licensing, legal claims
+  - Tool credit checks marked `confirm-before-every-use`
 
 **How it works in commands:**
 - Commands that show `>> Approve / Edit / Reject` gates: in auto mode, auto-approve and continue. Log the auto-approval in `logs/decisions.md`.
 - Commands that ask clarifying questions: in auto mode, use sensible defaults from `defaults.md` and proceed. Log what was assumed.
 - Multi-step workflows (brief → write → review → publish): in auto mode, chain automatically. Stop only at hard gates.
+
+### Audit log
+
+Every action in auto mode — not just gate decisions — gets logged to `logs/auto-audit.md`. This is the "black box" that lets you trace what happened if something goes wrong.
+
+**Log every auto-mode action with:**
+```
+## [ISO timestamp]
+- **Action:** what was done (e.g. "Generated 3 LinkedIn post variants")
+- **Tool:** which tool/API was called
+- **Input:** key parameters (endpoint, record count, query)
+- **Output:** result summary (records returned, status, errors)
+- **Cost:** credits/units consumed
+- **Files changed:** which files were created or modified
+- **Auto-approved gate?** yes/no — if yes, what gate was skipped
+```
+
+Keep this log append-only. Never truncate or overwrite. Rotate monthly to `logs/auto-audit-YYYY-MM.md`.
+
+### Circuit breakers
+
+Auto mode must enforce these limits per session. If any limit is hit, stop and ask.
+
+| Breaker | Threshold | What happens |
+|---------|-----------|--------------|
+| API calls per session | 500 | Stop, show count by tool, ask to continue |
+| Credits spent per session | 80% of workspace budget | Stop, show spend summary |
+| Content pieces modified per batch | 50 | Stop, confirm before processing rest |
+| Consecutive errors | 3 | Stop, diagnose before retrying |
+| File overwrites in single session | 10 | Stop, show list of files changed |
+| Cross-workspace writes | 1 (any) | Hard stop — never auto-approve writing outside active workspace |
+| Publishing to >3 channels simultaneously | 1 | Stop, confirm distribution plan |
+
+If a circuit breaker fires, log it in `logs/auto-audit.md` with full context and switch to interactive mode for the remainder of that workflow.
+
+### Rollback safety
+
+Before any multi-step auto-mode chain (brief → write → review → publish), create a git checkpoint:
+- `git add -A && git commit -m "AUTO checkpoint: before [workflow name]"`
+- If the chain fails or a circuit breaker fires, the user can `git revert` to the checkpoint
+- Log the checkpoint commit hash in `logs/auto-audit.md`
 
 **Toggling:**
 - Set during onboarding, or change anytime in `workspace.config.md`
