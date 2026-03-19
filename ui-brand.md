@@ -1,15 +1,15 @@
-# CONTENT:OS Brand Identity
+# WEB:OS Brand Identity
 
 ## System
-- **Name:** CONTENT:OS
-- **Full name:** The Content Operating System
+- **Name:** WEB:OS
+- **Full name:** The Web Content Operating System
 - **Version:** v1.1.0
 - **By:** Shyft AI
 - **Tagline:** "Research it. Write it. Publish it. Measure it."
 
 ## Mode Headers
 ```
-<< CONTENT:OS // {MODE} >>
+<< WEB:OS // {MODE} >>
 ```
 
 ## Tone
@@ -17,7 +17,7 @@
 
 ## Agent Colors
 
-| Color | Function | CONTENT:OS Agents |
+| Color | Function | WEB:OS Agents |
 |-------|----------|-------------------|
 | **magenta** | Research | Keyword research, topic research, competitor content |
 | **cyan** | Planning / Verification | Content brief, SEO audit, quality check |

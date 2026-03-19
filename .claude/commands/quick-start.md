@@ -1,4 +1,4 @@
-# CONTENT:OS Quick Start
+# WEB:OS Quick Start
 
 5-block quick onboarding.
 
@@ -28,4 +28,4 @@ Save to: `TOV.md`
 Save to: `ROADMAP.md`
 
 ---
-After: pre-fill remaining files, suggest `/content:calendar`.
+After: pre-fill remaining files, suggest `/web:calendar`.

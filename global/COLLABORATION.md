@@ -20,4 +20,4 @@ Options:
 ### Setup
 1. Create a Supabase project at supabase.com
 2. Add SUPABASE_URL and SUPABASE_ANON_KEY to .env
-3. Run /content:onboard with team mode selected
+3. Run /web:onboard with team mode selected

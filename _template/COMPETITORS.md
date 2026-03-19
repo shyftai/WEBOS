@@ -7,7 +7,7 @@
 - **Content strengths:**
 - **Content weaknesses:**
 - **Publishing frequency:**
-- **Top content:**
+- **Top web:**
 - **Channels:**
 - **Newsletter:** {yes/no, subscriber count if known}
 - **SEO overlap:** {shared keywords}

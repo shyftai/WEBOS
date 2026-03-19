@@ -1,22 +1,20 @@
-# CONTENT:OS
+# WEB:OS — The Web Content Operating System
 
-A living content operating system that runs inside Claude Code. Research, write, publish, measure — all from the terminal.
-
-Not a template. Not a tool. An operating system for content teams.
+Turn Claude Code into a full content operation. Create it. Publish it. Measure it. Optimize it.
 
 ## Install
 
 ```bash
-git clone https://github.com/shyftai/CONTENTOS.git
-cd CONTENTOS
+git clone https://github.com/shyftai/WEBOS.git
+cd WEBOS
 claude
 ```
 
-That's it. CONTENT:OS boots automatically when Claude Code opens the repo.
+That's it. WEB:OS boots automatically when Claude Code opens the repo.
 
 ### Connect your tools (recommended)
 
-CONTENT:OS works best with MCP servers connected in Claude Code:
+WEB:OS works best with MCP servers connected in Claude Code:
 
 | MCP Server | What it unlocks |
 |-----------|----------------|
@@ -43,7 +41,7 @@ Copy `.env.example` to `.env` and add keys for deeper integrations:
 ## What it does
 
 ### Sources of truth
-Every workspace has living documents that CONTENT:OS reads before every action:
+Every workspace has living documents that WEB:OS reads before every action:
 
 | File | Purpose |
 |------|---------|
@@ -71,7 +69,7 @@ Every piece of content passes 7 checks before approval:
 7. **Channel check** — formatted for target platform
 
 ### Learnings system
-CONTENT:OS learns from every piece of content:
+WEB:OS learns from every piece of web:
 
 - What topics drive engagement
 - Which channels perform best
@@ -97,74 +95,74 @@ Updated after every debrief. Loaded before every writing session.
 ### Setup
 | Command | What it does |
 |---------|-------------|
-| `/content:onboard` | Create a new workspace — guided setup |
-| `/content:research` | Deep-dive into audience, competitors, or topic |
+| `/web:onboard` | Create a new workspace — guided setup |
+| `/web:research` | Deep-dive into audience, competitors, or topic |
 
 ### Daily
 | Command | What it does |
 |---------|-------------|
-| `/content:today` | Daily content briefing — what needs attention |
-| `/content:dashboard` | Full workspace performance overview |
+| `/web:today` | Daily content briefing — what needs attention |
+| `/web:dashboard` | Full workspace performance overview |
 
 ### Create
 | Command | What it does |
 |---------|-------------|
-| `/content:brief` | Create a content brief for any piece |
-| `/content:write` | Write content from a brief |
-| `/content:repurpose` | Transform content across channels |
-| `/content:batch` | Batch content creation at scale |
+| `/web:brief` | Create a content brief for any piece |
+| `/web:write` | Write content from a brief |
+| `/web:repurpose` | Transform content across channels |
+| `/web:batch` | Batch content creation at scale |
 
 ### SEO
 | Command | What it does |
 |---------|-------------|
-| `/content:seo-audit` | Audit a page or site for SEO |
-| `/content:keywords` | Keyword research and clustering |
-| `/content:optimize` | Optimize existing content |
-| `/content:cluster` | Topic cluster management |
+| `/web:seo-audit` | Audit a page or site for SEO |
+| `/web:keywords` | Keyword research and clustering |
+| `/web:optimize` | Optimize existing content |
+| `/web:cluster` | Topic cluster management |
 
 ### Publish
 | Command | What it does |
 |---------|-------------|
-| `/content:publish` | Publish or schedule content |
-| `/content:calendar` | View and manage content calendar |
+| `/web:publish` | Publish or schedule content |
+| `/web:calendar` | View and manage content calendar |
 
 ### Social
 | Command | What it does |
 |---------|-------------|
-| `/content:social` | Create social media content |
-| `/content:community` | Community engagement content |
+| `/web:social` | Create social media content |
+| `/web:community` | Community engagement content |
 
 ### Intel
 | Command | What it does |
 |---------|-------------|
-| `/content:trends` | Discover trending topics |
-| `/content:competitor` | Monitor competitor content |
+| `/web:trends` | Discover trending topics |
+| `/web:competitor` | Monitor competitor content |
 
 ### Measure
 | Command | What it does |
 |---------|-------------|
-| `/content:analytics` | Pull and analyze metrics |
-| `/content:report` | Generate performance reports |
+| `/web:analytics` | Pull and analyze metrics |
+| `/web:report` | Generate performance reports |
 
 ### Review
 | Command | What it does |
 |---------|-------------|
-| `/content:review` | Quality check before publishing |
-| `/content:debrief` | Performance retrospective |
-| `/content:compliance` | Compliance and brand safety check |
+| `/web:review` | Quality check before publishing |
+| `/web:debrief` | Performance retrospective |
+| `/web:compliance` | Compliance and brand safety check |
 
 ### Scale
 | Command | What it does |
 |---------|-------------|
-| `/content:swarm` | Parallel agent operations for batch content |
+| `/web:swarm` | Parallel agent operations for batch content |
 
 ### Other
 | Command | What it does |
 |---------|-------------|
-| `/content:newsletter` | Create email newsletter content |
-| `/content:portfolio` | Multi-brand dashboard (agency) |
-| `/content:feedback` | Submit feedback, report a bug, or request a feature |
-| `/content:status` | Show all commands and system status |
+| `/web:newsletter` | Create email newsletter content |
+| `/web:portfolio` | Multi-brand dashboard (agency) |
+| `/web:feedback` | Submit feedback, report a bug, or request a feature |
+| `/web:status` | Show all commands and system status |
 
 ## System status on boot
 

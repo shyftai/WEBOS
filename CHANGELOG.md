@@ -1,13 +1,13 @@
 # Changelog
 
 ## v1.1.0 — 2026-03-09
-- Add /content:today daily briefing command
+- Add /web:today daily briefing command
 - Add auto execution mode (interactive/auto with hard gates)
 - Add ui-brand.md visual consistency standard
-- Add /content:feedback command
-- Add /content:debrief command
-- Add /content:compliance command
-- Add /content:portfolio agency command
+- Add /web:feedback command
+- Add /web:debrief command
+- Add /web:compliance command
+- Add /web:portfolio agency command
 - Add swarm reference for parallel content operations
 
 ## v1.0.0 — Launch

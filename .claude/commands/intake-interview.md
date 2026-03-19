@@ -1,4 +1,4 @@
-# CONTENT:OS Intake Interview
+# WEB:OS Intake Interview
 
 Structured onboarding interview for content workspaces. Ask one block at a time.
 
@@ -75,4 +75,4 @@ Save to: `DISTRIBUTION.md`
 Save to: `ROADMAP.md`
 
 ---
-After all blocks: display summary, suggest `/content:calendar` or `/content:audit`.
+After all blocks: display summary, suggest `/web:calendar` or `/web:audit`.
