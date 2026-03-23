@@ -10,31 +10,31 @@ Auto-generated action items from debriefs, analytics, and audits.
 
 ## Active content
 
-| # | Title/Series | Pillar | Channel | Status | Target date |
-|---|-------------|--------|---------|--------|------------|
+| # | Title/Series | Pillar | Page type | Status | Target date |
+|---|-------------|--------|-----------|--------|------------|
 | | | | | | |
 
 ## Planned content
 
-| # | Title/Topic | Pillar | Channel | Priority | Est. start |
-|---|------------|--------|---------|----------|------------|
+| # | Title/Topic | Pillar | Page type | Priority | Est. start |
+|---|------------|--------|-----------|----------|------------|
 | | | | | | |
 
 ## Ideas backlog
 
-| # | Idea | Pillar | Channel | Source | Added |
-|---|------|--------|---------|--------|-------|
+| # | Idea | Pillar | Page type | Source | Added |
+|---|------|--------|-----------|--------|-------|
 | | | | | | |
 
 ## Completed content
 
-| # | Title | Pillar | Channel | Published | Performance |
-|---|-------|--------|---------|-----------|-------------|
+| # | Title | Pillar | Page type | Published | Performance |
+|---|-------|--------|-----------|-----------|-------------|
 | | | | | | |
 
 ## Content cadence
 
 - Blog: {n}x per {week/month}
-- LinkedIn: {n}x per week
-- Newsletter: {frequency}
-- Twitter: {n}x per day
+- Landing pages: {n} per quarter
+- Case studies: {n} per quarter
+- Content refreshes: {n} per month

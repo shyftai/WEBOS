@@ -8,8 +8,7 @@
 - **Content weaknesses:**
 - **Publishing frequency:**
 - **Top web:**
-- **Channels:**
-- **Newsletter:** {yes/no, subscriber count if known}
+- **Top pages:** {highest-traffic pages if known}
 - **SEO overlap:** {shared keywords}
 
 ### {Competitor 2}

@@ -20,15 +20,16 @@
 6. **Emoji use:** {never / sparingly / yes}
 7. **CTA style:** {direct / soft / question-based}
 
-## Channel-specific adjustments
+## Page-type adjustments
 
-| Channel | Tone shift | Example |
-|---------|-----------|---------|
-| Blog | | |
-| LinkedIn | | |
-| Twitter/X | | |
-| Newsletter | | |
-| Community | | |
+| Page type | Tone shift | Example |
+|-----------|-----------|---------|
+| Blog post | | |
+| Landing page | | |
+| Case study | | |
+| Documentation | | |
+| Comparison page | | |
+| FAQ | | |
 
 ## Words we use / don't use
 

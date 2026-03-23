@@ -1,86 +1,127 @@
-# Channel Specifications
+# Web Page Specifications
 
-## Blog / Website
+## Blog post / Article
 
 | Spec | Value |
 |------|-------|
-| Ideal word count | 1,500-2,500 (check SERP) |
-| Meta title | ≤60 characters |
-| Meta description | ≤155 characters |
-| H1 | Single, includes keyword |
-| Images | 1 per 300 words, all with alt text |
-| Internal links | 3-5 per post |
+| Ideal word count | 1,500-2,500 (check SERP competitors) |
+| Meta title | ≤60 characters, includes primary keyword |
+| Meta description | ≤155 characters, includes keyword + CTA |
+| H1 | Single, includes primary keyword, matches search intent |
+| Heading hierarchy | H1 → H2 → H3, no skipping levels |
+| Images | 1 per 300 words, all with alt text, WebP format preferred |
+| Internal links | 3-5 relevant links to cluster content |
 | External links | 2-3 authoritative sources |
 | CTA | 1 primary per post |
+| URL structure | /blog/{keyword-slug} — short, descriptive, lowercase |
+| Schema | Article, FAQ, HowTo as appropriate |
+| Open Graph | og:title, og:description, og:image required |
 
-## LinkedIn
-
-| Spec | Value |
-|------|-------|
-| Post length | 150-300 words optimal |
-| Character limit | 3,000 characters |
-| Hook | First 2 lines visible before "...see more" |
-| Line spacing | Single line paragraphs with line breaks |
-| Hashtags | 3-5, at the bottom |
-| Image | 1200x627px for link posts, 1080x1080 for native |
-| Carousel | PDF upload, 1080x1350px per slide, 5-10 slides |
-| Best posting times | Tue-Thu 8-10am local |
-| Algorithm tip | Comments in first hour matter most |
-
-## Twitter / X
+## Pillar page
 
 | Spec | Value |
 |------|-------|
-| Tweet length | 280 characters |
-| Thread tweets | 5-12 tweets optimal |
-| Hook tweet | Must stand alone and be compelling |
-| Images | Up to 4, 1200x675px optimal |
-| Hashtags | 0-2 (fewer is better on X) |
-| Best times | Weekdays 12-1pm, 5-6pm |
-| Algorithm tip | Replies and bookmarks weight heavily |
+| Word count | 2,000-4,000 words |
+| Meta title | ≤60 characters, broad topic keyword |
+| Structure | Table of contents + linked sections |
+| Internal links | Link to ALL cluster pages (10-20+) |
+| Cluster links back | Every cluster page links to this pillar |
+| CTA | 1 primary + contextual CTAs per section |
+| Update frequency | Quarterly minimum |
+| Schema | Article + Breadcrumb + FAQ |
 
-## Instagram
-
-| Spec | Value |
-|------|-------|
-| Caption length | ≤2,200 characters |
-| Hashtags | 10-30, mix of sizes |
-| Image | 1080x1080 (square), 1080x1350 (portrait) |
-| Carousel | Up to 10 slides, 1080x1350 |
-| Reel | 9:16 aspect, 15-90 seconds |
-| Story | 1080x1920, ≤15 seconds |
-| Best times | Tue-Thu 10am, 1pm, 7pm |
-
-## Newsletter (Email)
+## Landing page
 
 | Spec | Value |
 |------|-------|
-| Subject line | ≤50 characters ideal, ≤70 max |
-| Preview text | 40-90 characters, complements subject |
-| Body length | 500-800 words (curated), 800-1500 (feature) |
-| CTA | 1 primary, max 2 secondary |
-| Images | Lightweight, alt text required |
-| Links | 3-7 links total |
-| Best send times | Tue/Thu 9-10am |
-| Mobile | 60%+ read on mobile — design accordingly |
+| Word count | 300-800 (conversion-focused) |
+| Above the fold | Headline + value prop + CTA visible without scrolling |
+| Headline | ≤10 words, benefit-driven |
+| Subheadline | 1 sentence expanding the headline |
+| CTA | 1 primary, repeated 2-3x on page |
+| Social proof | Logos, testimonials, or stats near CTA |
+| Form fields | Minimum necessary — each field reduces conversion |
+| Page speed | LCP <2.5s, CLS <0.1 (critical for conversion) |
+| Schema | Product, Service, or Organization |
+| No navigation | Minimize exit paths — focus on conversion |
 
-## YouTube
-
-| Spec | Value |
-|------|-------|
-| Title | ≤60 characters, keyword-rich |
-| Description | 200-300 words, links, timestamps |
-| Tags | 5-8 relevant tags |
-| Thumbnail | 1280x720px, bold text, faces |
-| Ideal length | 8-15 minutes (standard), ≤60s (Shorts) |
-| Chapters | Timestamps in description |
-
-## Reddit
+## Product / Feature page
 
 | Spec | Value |
 |------|-------|
-| Title | Clear, specific, not clickbait |
-| Post length | Varies by subreddit norms |
-| Self-promotion | Follow 9:1 rule (9 helpful posts per 1 self-promo) |
-| Tone | Authentic, not corporate |
-| Formatting | Use markdown, headers, bullet points |
+| Word count | 500-1,500 |
+| Meta title | "{Product/Feature} — {Benefit}" format |
+| Structure | Problem → Solution → Features → Proof → CTA |
+| Screenshots | Annotated, showing key workflows |
+| Comparison | Optional "vs" section for commercial intent |
+| Schema | Product, SoftwareApplication, or Service |
+| Internal links | Link to related features, pricing, case studies |
+
+## Comparison page
+
+| Spec | Value |
+|------|-------|
+| Word count | 1,500-3,000 |
+| Meta title | "{Product A} vs {Product B}: {Year} Comparison" |
+| Structure | Criteria table → category breakdowns → verdict |
+| Comparison table | Feature-by-feature, honest, visual checkmarks |
+| Verdict | Clear recommendation per use case |
+| Schema | Article + FAQ |
+| SEO target | "{X} vs {Y}" and "{X} alternative" keywords |
+
+## Case study
+
+| Spec | Value |
+|------|-------|
+| Word count | 800-1,500 |
+| Structure | Context → Challenge → Solution → Results |
+| Results | Specific numbers — percentage improvements, revenue, time saved |
+| Pull quotes | 1-2 customer quotes, highlighted |
+| CTA | "Get similar results" or "Talk to us" |
+| Schema | Article |
+| Visual | Before/after metrics, charts where possible |
+
+## Documentation / Knowledge base
+
+| Spec | Value |
+|------|-------|
+| Word count | Varies — as long as needed, no shorter |
+| Meta title | "{Action verb} {topic} — {Product} Docs" |
+| Structure | Prerequisites → Steps → Expected outcome → Troubleshooting |
+| Code blocks | Syntax-highlighted, copy button |
+| Screenshots | Annotated, current UI version |
+| Navigation | Sidebar with full doc tree |
+| Search | Required — docs without search are broken |
+| Schema | HowTo, TechArticle |
+| Versioning | Version selector if multiple product versions |
+
+## FAQ page
+
+| Spec | Value |
+|------|-------|
+| Questions | 10-30, from actual search queries and support tickets |
+| Answer length | 2-4 sentences per answer, expandable for detail |
+| Structure | Grouped by category with anchor links |
+| Schema | FAQPage (required — this is the primary ranking signal) |
+| Internal links | Link answers to detailed pages where relevant |
+| Update frequency | Monthly — add new questions from support/search data |
+
+## Glossary page
+
+| Spec | Value |
+|------|-------|
+| Definitions | 1-3 sentences each, plain language |
+| Structure | Alphabetical with anchor links, A-Z navigation |
+| Internal links | Link terms to relevant blog posts and docs |
+| Schema | DefinedTermSet |
+| SEO value | Captures "what is {term}" queries |
+
+## Resource / Tools page
+
+| Spec | Value |
+|------|-------|
+| Word count | 200-500 per resource |
+| Structure | Categorized grid or list with descriptions |
+| Lead capture | Gated downloads where appropriate |
+| Schema | ItemList |
+| Update frequency | Add new resources monthly |

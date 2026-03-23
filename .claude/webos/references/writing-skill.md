@@ -1,11 +1,11 @@
-# Content Writing — Principles
+# Web Writing — Principles
 
 ## The content hierarchy
 
 1. **Useful** — does it solve a real problem or answer a real question?
 2. **Clear** — can the target audience understand it without re-reading?
-3. **Engaging** — does it hold attention from first line to last?
-4. **Findable** — will the right people discover it? (SEO, distribution)
+3. **Findable** — will the right people discover it via search?
+4. **Engaging** — does it hold attention from first line to last?
 5. **On-brand** — does it sound like the brand?
 
 If it's not useful, nothing else matters. Optimize in this order.
@@ -19,12 +19,13 @@ If it's not useful, nothing else matters. Optimize in this order.
 - Front-load paragraphs — put the key point first
 - Use bullet points for lists of 3+ items
 - End sections with transitions, not dead ends
+- Include a table of contents for posts >1,500 words
 
 ### Hooks
 - First sentence earns the second sentence
 - Open with a specific problem, surprising stat, or bold claim
 - Never open with "In today's world..." or "Have you ever wondered..."
-- Pattern interrupt: break the reader's scroll pattern
+- Answer the core question in the first 200 words (for SEO + reader trust)
 
 ### Clarity
 - Short sentences for impact. Longer sentences for flow. Mix both.
@@ -40,64 +41,101 @@ If it's not useful, nothing else matters. Optimize in this order.
 - Answer the search intent in the first 200 words
 - Use related terms naturally (LSI keywords)
 - Internal link to relevant existing content
+- Include FAQ sections for "People also ask" targeting
+- Front-load meta descriptions with the value proposition
 
-### Social writing
-- Hook in the first line — that's all they see before "...see more"
-- Write for mobile — short paragraphs, whitespace
-- End with a clear action: comment, share, save, click
-- Platform-native format: no LinkedIn post should read like a blog excerpt
-- Hashtags: 3-5 on LinkedIn, 0-2 on Twitter, 10-30 on Instagram
+### Landing page copy
+- Headline: benefit-driven, ≤10 words
+- Subheadline: expand on the headline in 1 sentence
+- Body: problem → solution → proof → CTA
+- Remove friction words ("just", "simply", "only takes")
+- Add urgency without being fake ("limited beta", not "LAST CHANCE!!!")
+- Every section should push toward one action
+- Social proof close to CTA — reduce anxiety at decision point
 
-### Newsletter writing
-- Subject line = everything. Test ruthlessly.
-- Preview text complements the subject, doesn't repeat it
-- One primary CTA per email
-- Write like you're writing to one person, not a list
-- PS lines get read more than body copy
+### Product / Feature page copy
+- Lead with the outcome, not the feature
+- "Send invoices in 30 seconds" not "Invoice generation module"
+- Use specific numbers over vague claims
+- Show, don't tell — screenshots, GIFs, examples
+- Address objections before they form
+- Include "who it's for" and "who it's not for"
 
-### Community writing
-- Don't sell — help
-- Match the community's language and norms
-- Be specific and practical — vague advice gets ignored
-- Cite your experience: "In my experience..." not "You should..."
-- Ask questions, don't just make statements
+### UX microcopy
+- Button text: action verb + object ("Start free trial", not "Submit")
+- Error messages: what happened + how to fix it
+- Empty states: helpful, not sad ("No results" → "Try a broader search")
+- Tooltips: one sentence max, plain language
+- Confirmation dialogs: state the consequence clearly
+- Loading states: set expectations ("Analyzing 1,247 pages...")
+
+### Documentation writing
+- Prerequisites first — what do they need before starting?
+- Numbered steps — one action per step
+- Expected output after each step — so they know it worked
+- Troubleshooting section at the end
+- Code blocks with copy button and syntax highlighting
+- Don't explain obvious things. Do explain non-obvious things.
+
+### Case study writing
+- Open with the result, not the backstory
+- Specific numbers > vague outcomes ("47% faster" not "much faster")
+- Quote the customer, don't paraphrase
+- Structure: Challenge → What we did → Results → What's next
+- Include context the reader can map to their own situation
 
 ## Content types and their structures
 
-### Blog post / article
+### Blog post / Article
 1. Hook (problem/stat/bold claim)
 2. Context (why this matters now)
-3. Main content (the meat)
-4. Takeaways / Action steps
-5. CTA
+3. Main content (structured with H2/H3s)
+4. Key takeaways / Action steps
+5. CTA (relevant to the topic, not generic)
+6. FAQ section (for PAA targeting)
 
-### LinkedIn post
-1. Hook line (stop the scroll)
-2. Story/insight (3-5 short paragraphs)
-3. Takeaway (one clear lesson)
-4. CTA (question or action)
-5. Hashtags
+### Pillar page
+1. Table of contents with anchor links
+2. Comprehensive overview (set context)
+3. Section per cluster topic (H2 each)
+4. Internal links to every cluster page
+5. Summary with next steps
+6. Related resources
 
-### Twitter thread
-1. Tweet 1: hook + promise of value
-2. Tweets 2-N: one point per tweet, numbered
-3. Final tweet: summary + CTA + link back to tweet 1
-
-### Newsletter
-1. Subject line + preview text
-2. Opening hook (personal, conversational)
-3. Main feature (one key piece)
-4. Quick hits / links (2-3 curated items)
-5. CTA
-6. Sign-off
+### Landing page
+1. Headline + subheadline (above fold)
+2. Social proof bar (logos or stat)
+3. Problem statement (1-2 paragraphs)
+4. Solution with key benefits (3-4 bullets)
+5. Proof section (testimonials, case study stats)
+6. CTA section
+7. FAQ (objection handling)
 
 ### Case study
-1. Client context (who, what, where)
-2. Challenge (specific problem with data)
-3. Solution (what was done, step by step)
-4. Results (specific numbers)
-5. Testimonial/quote
-6. CTA
+1. Result headline ("How {Company} achieved {result}")
+2. Company context (industry, size, challenge)
+3. Challenge (specific problem with data)
+4. Solution (what was done, step by step)
+5. Results (specific numbers, before/after)
+6. Customer quote
+7. CTA
+
+### Documentation page
+1. Page title (action-oriented: "Configure SSO")
+2. Prerequisites
+3. Steps (numbered, one action each)
+4. Expected outcome
+5. Troubleshooting
+6. Related docs
+
+### Comparison page
+1. Context (why this comparison matters)
+2. TL;DR verdict (don't make them scroll)
+3. Criteria explained (transparency)
+4. Feature-by-feature comparison table
+5. Deep dive per category
+6. Verdict by use case
+7. FAQ
 
 ## Anti-patterns
 
@@ -108,3 +146,6 @@ If it's not useful, nothing else matters. Optimize in this order.
 - **Feature dumping** — listing features without connecting to benefits
 - **Fake urgency** — "You NEED to read this NOW" — no they don't
 - **Generic openings** — "In today's fast-paced digital landscape..." — stop
+- **Buried CTA** — asking for the action only at the very end
+- **No internal links** — orphan pages help nobody, least of all search engines
+- **Missing meta data** — no title/description = leaving ranking on the table

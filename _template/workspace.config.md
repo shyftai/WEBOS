@@ -3,7 +3,7 @@
 - **Brand:** {brand-name}
 - **URL:** {primary website}
 - **Industry:** {industry/niche}
-- **Role:** {Content Creator / Content Strategist / Social Media Manager / SEO Specialist / Head of Content / Agency}
+- **Role:** {Content Creator / Content Strategist / SEO Specialist / Head of Content / Agency}
 - **Mode:** {solo / team}
 - **Execution mode:** interactive
 - **Slack notifications:** {on / off}

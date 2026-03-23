@@ -11,7 +11,7 @@ Core themes that all content maps back to. Every piece of content should clearly
 - **Target audience:**
 - **Key topics:**
   -
-- **Content types:** {blog, social, video, newsletter}
+- **Content types:** {blog, landing page, guide, video}
 - **SEO clusters:** {linked keyword clusters}
 
 ### 2. {Pillar name}

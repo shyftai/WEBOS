@@ -21,8 +21,7 @@ Workspace: $ARGUMENTS
 ## Publishing schedule
 4. Show content due today:
    - Blog posts scheduled for publish
-   - Social posts queued
-   - Newsletter drafts due
+   - Pages ready for deployment
    - Content in review/approval pipeline
 
 ## Content pipeline
@@ -35,15 +34,14 @@ Workspace: $ARGUMENTS
 
 ## Performance pulse
 6. Show key metrics from last 24-48 hours:
-   - Top performing content (engagement, traffic, shares)
+   - Top performing content (traffic, conversions, rankings)
    - Underperforming content (flag if below benchmarks)
    - SEO movement (ranking changes, new keywords)
-   - Social engagement rate
 
-## Engagement
-7. Show pending engagement:
-   - Comments needing replies
-   - Community posts needing response
+## Site health
+7. Show pending items:
+   - Pages with broken links or errors
+   - Content needing updates (stale or outdated)
    - Competitor content worth noting
 
 ## This week ahead
@@ -54,7 +52,7 @@ Workspace: $ARGUMENTS
 10. Suggest top 3 actions for today based on urgency:
     - Overdue items first
     - Publishing deadlines
-    - Engagement opportunities
+    - Optimization opportunities
 
 11. Display:
 ```
@@ -63,7 +61,7 @@ Workspace: $ARGUMENTS
   Quick actions:
   >> /web:write — draft content
   >> /web:publish — publish ready content
-  >> /web:social — create social posts
+  >> /web:optimize — optimize existing pages
   >> /web:calendar — manage content calendar
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -1,6 +1,6 @@
 # WEB:OS — The Web Content Operating System
 
-Turn Claude Code into a full content operation. Create it. Publish it. Measure it. Optimize it.
+Turn Claude Code into a full web content operation. Write it. Publish it. Rank it. Convert it.
 
 ## Install
 
@@ -29,13 +29,10 @@ Add them in Claude Code → Settings → MCP Servers.
 
 Copy `.env.example` to `.env` and add keys for deeper integrations:
 
-- **SEO:** Ahrefs, SEMrush, Moz
-- **CMS:** WordPress, Webflow, Ghost
-- **Social:** LinkedIn, Twitter/X, Instagram, TikTok
-- **Scheduling:** Buffer, Hootsuite
-- **Newsletter:** Beehiiv, ConvertKit, Substack
+- **SEO:** Ahrefs, SEMrush, DataforSEO, Moz
+- **CMS:** Webflow, WordPress, Contentful
+- **Analytics:** GA4, Google Search Console
 - **Research:** Exa, Firecrawl
-- **Monitoring:** Mention, Brand24
 - **Scale:** Anthropic API (for batch content generation)
 
 ## What it does
@@ -49,8 +46,8 @@ Every workspace has living documents that WEB:OS reads before every action:
 | `AUDIENCE.md` | Target audiences and segments |
 | `PILLARS.md` | Content pillars and themes |
 | `TOV.md` | Tone of voice rules |
-| `CHANNELS.md` | Active channels, specs, frequency |
 | `SEO-STRATEGY.md` | Keyword clusters, targets, technical checklist |
+| `SITE-ARCHITECTURE.md` | URL structure, navigation, internal linking map |
 | `CALENDAR.md` | Content calendar and schedule |
 | `PERFORMANCE.md` | Metrics, KPIs, benchmarks |
 | `LEARNINGS.md` | Persistent intelligence — what works, what doesn't |
@@ -58,23 +55,25 @@ Every workspace has living documents that WEB:OS reads before every action:
 | `COMPETITORS.md` | Competitor content analysis |
 
 ### Quality gates
-Every piece of content passes 7 checks before approval:
+Every piece of content passes 8 checks before approval:
 
 1. **Brief check** — matches the original brief
 2. **Brand check** — matches brand voice and guidelines
 3. **Audience check** — written for the right segment
-4. **SEO check** — keyword, meta, headings, links
+4. **SEO check** — keyword, meta, headings, internal links
 5. **Readability check** — grade level, sentence length, jargon
 6. **Source check** — claims cited, nothing fabricated
-7. **Channel check** — formatted for target platform
+7. **Page type check** — formatted correctly for page type
+8. **Internal link check** — 3-5 links, no orphan pages
 
 ### Learnings system
-WEB:OS learns from every piece of web:
+WEB:OS learns from every piece of content:
 
-- What topics drive engagement
-- Which channels perform best
-- What writing patterns convert
+- What topics drive organic traffic
+- Which page types convert best
+- What writing patterns rank
 - Which SEO strategies work
+- What CRO changes improve conversion
 - What definitely doesn't work (anti-learnings)
 
 Updated after every debrief. Loaded before every writing session.
@@ -85,8 +84,8 @@ Updated after every debrief. Loaded before every writing session.
 |------|-------|
 | **Content Creator** | Writing, briefs, tone of voice |
 | **Content Strategist** | Pillars, calendar, measurement |
-| **Social Media Manager** | Channels, scheduling, community |
-| **SEO Specialist** | Keywords, audits, technical SEO |
+| **SEO Specialist** | Keywords, audits, technical SEO, clusters |
+| **CRO Specialist** | Conversion optimization, A/B testing |
 | **Head of Content** | Everything — team, reporting, pipeline |
 | **Agency** | Multi-brand, portfolio, templates |
 
@@ -107,9 +106,8 @@ Updated after every debrief. Loaded before every writing session.
 ### Create
 | Command | What it does |
 |---------|-------------|
-| `/web:brief` | Create a content brief for any piece |
+| `/web:brief` | Create a content brief for any web page |
 | `/web:write` | Write content from a brief |
-| `/web:repurpose` | Transform content across channels |
 | `/web:batch` | Batch content creation at scale |
 
 ### SEO
@@ -120,17 +118,23 @@ Updated after every debrief. Loaded before every writing session.
 | `/web:optimize` | Optimize existing content |
 | `/web:cluster` | Topic cluster management |
 
+### Technical
+| Command | What it does |
+|---------|-------------|
+| `/web:vitals` | Core Web Vitals audit and recommendations |
+| `/web:crawl` | Crawl health, sitemap, index coverage |
+| `/web:links` | Internal link graph analysis |
+
 ### Publish
 | Command | What it does |
 |---------|-------------|
-| `/web:publish` | Publish or schedule content |
+| `/web:publish` | Publish or schedule content to CMS |
 | `/web:calendar` | View and manage content calendar |
 
-### Social
+### Conversion
 | Command | What it does |
 |---------|-------------|
-| `/web:social` | Create social media content |
-| `/web:community` | Community engagement content |
+| `/web:convert` | CRO analysis, landing page optimization, A/B tests |
 
 ### Intel
 | Command | What it does |
@@ -141,7 +145,7 @@ Updated after every debrief. Loaded before every writing session.
 ### Measure
 | Command | What it does |
 |---------|-------------|
-| `/web:analytics` | Pull and analyze metrics |
+| `/web:analytics` | Pull and analyze web metrics |
 | `/web:report` | Generate performance reports |
 
 ### Review
@@ -159,7 +163,6 @@ Updated after every debrief. Loaded before every writing session.
 ### Other
 | Command | What it does |
 |---------|-------------|
-| `/web:newsletter` | Create email newsletter content |
 | `/web:portfolio` | Multi-brand dashboard (agency) |
 | `/web:feedback` | Submit feedback, report a bug, or request a feature |
 | `/web:status` | Show all commands and system status |
@@ -178,9 +181,9 @@ Updated after every debrief. Loaded before every writing session.
   │                                                    │
   │  API keys:                                         │
   │  [x] Ahrefs          [ ] SEMrush                   │
-  │  [x] Buffer          [x] Beehiiv                   │
+  │  [x] Webflow         [ ] GA4                       │
   │                                                    │
-  │  2 MCP servers · 3 API keys · 8 missing            │
+  │  2 MCP servers · 2 API keys · 6 missing            │
   │                                                    │
   └────────────────────────────────────────────────────┘
 ```
@@ -194,18 +197,20 @@ Updated after every debrief. Loaded before every writing session.
                   │
      ┌────────────┼────────────┐
      ▼            ▼            ▼
-   RESEARCH     WRITE       METRICS
+   RESEARCH    KEYWORDS     CLUSTERS
      │            │            │
      ▼            ▼            ▼
-  IDEATE ──── CREATE ──── PUBLISH
+  BRIEF ───── WRITE ───── OPTIMIZE
                   │            │
-             REPURPOSE    ◈ SWARM
+               REVIEW     INTERNAL LINKS
+                  │            │
+              PUBLISH     ◈ SWARM
                   │       (optional)
            PERFORMANCE
                   │
-           OPTIMIZE + LEARN
+      ANALYTICS + VITALS + CONVERT
                   │
-             CALENDAR ──── CHANNELS
+           OPTIMIZE + LEARN
 ```
 
 ## Collaboration
@@ -224,6 +229,6 @@ For batch operations (25+ pieces), choose:
 
 ---
 
-v1.0.0
+v1.2.0
 
 MIT — Built by [Shyft AI](https://shyft.ai)

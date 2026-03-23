@@ -25,7 +25,7 @@ Workspace and web: $ARGUMENTS
   │  [x] Meta title and description set              │
   │  [x] CTA included                               │
   │  [x] Calendar slot confirmed                     │
-  │  [ ] Cross-promotion planned                     │
+  │  [ ] Internal links verified                      │
   │                                                 │
   │  Score: 7/8 — ready to publish                   │
   │                                                 │
@@ -36,7 +36,7 @@ Workspace and web: $ARGUMENTS
    Publishing pushes live content. Always require explicit approval before proceeding.
    Show: `>> Confirm publish? This is a hard gate — auto mode does not skip this. (publish / schedule / cancel)`
 
-6. If publishing via API (WordPress, Buffer, etc.):
+6. If publishing via API (WordPress, Webflow, etc.):
    - Confirm platform and credentials
    - Preview the formatted version
    - Publish or schedule

@@ -7,11 +7,11 @@ they activate only when explicitly requested or when batch size exceeds 25 piece
 
 ### When to use swarms
 
-- Batch creating 25+ social posts at once
 - Generating blog outlines for an entire keyword cluster
-- Repurposing one piece across 5+ channels simultaneously
+- Creating landing pages for multiple campaigns
+- Repurposing one piece across 5+ web formats simultaneously
 - Running SEO audits across multiple pages
-- Creating a month of newsletter editions
+- Batch-optimizing existing pages for updated keywords
 
 ### Execution mode — Claude Code vs API
 
@@ -80,10 +80,10 @@ Always ask before choosing — never default to API mode without user consent.
 
 | Operation | Default batch size | Max parallel agents |
 |-----------|-------------------|---------------------|
-| Social posts | 10 posts per agent | 5 |
 | Blog outlines | 5 outlines per agent | 4 |
+| Landing pages | 5 pages per agent | 4 |
 | Repurpose variants | 5 pieces per agent | 4 |
-| Newsletter editions | 4 editions per agent | 3 |
+| Page optimizations | 10 pages per agent | 5 |
 | SEO audits | 10 pages per agent | 4 |
 
 ---

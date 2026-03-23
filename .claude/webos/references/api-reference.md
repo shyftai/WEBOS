@@ -1,6 +1,6 @@
-# API Reference — WEB:OS (Content Publishing + SEO)
+# API Reference — WEB:OS (CMS + SEO)
 
-Dangerous and destructive endpoint reference for content publishing and SEO tools. **HARD GATE — always stop and confirm before calling any endpoint below.**
+Dangerous and destructive endpoint reference for CMS publishing and SEO tools. **HARD GATE — always stop and confirm before calling any endpoint below.**
 
 Last updated: 2026-03-13
 
@@ -19,8 +19,6 @@ Last updated: 2026-03-13
 
 | Platform | Highest-Risk Endpoint | Worst Case | Recovery |
 |----------|----------------------|-----------|----------|
-| **Buffer** | `DELETE /updates/{id}` | Scheduled post permanently deleted | None — must recreate |
-| **Buffer** | Channel disconnect | All scheduled posts for channel destroyed | Must reconnect and reschedule |
 | **Ahrefs** | Credit-intensive queries | Entire monthly API credit budget burned in minutes | None — credits consumed, wait for next cycle |
 | **SEMrush** | Credit-intensive queries | API unit budget exhausted | None — must purchase more or wait |
 | **Webflow** | `POST /sites/{id}/publish` | Broken content pushed to live site | Must fix and republish — live site is broken in the meantime |
@@ -29,40 +27,7 @@ Last updated: 2026-03-13
 
 ---
 
-## 1. Buffer (api.bufferapp.com)
-
-**Auth:** OAuth2 access token in `Authorization: Bearer {token}`
-**Base URL:** `https://api.bufferapp.com/1`
-**Rate limits:** 60 requests/minute for most endpoints. Publishing: lower limits (not publicly documented). Exceeding returns 429.
-
-### DELETE/Destructive Endpoints
-
-| Endpoint | Blast Radius | Irreversible? | Safe Alternative |
-|----------|-------------|---------------|-----------------|
-| `DELETE /updates/{id}` | Permanently deletes a scheduled, sent, or draft post. If scheduled, the post will never be published. No archive, no recovery. | YES | Move to draft status instead: `POST /updates/{id}/move_to_top` to requeue, or simply leave in queue. |
-| `POST /updates/{id}/destroy` | Same as DELETE — permanently destroys an update. Exists as an alternative endpoint. | YES | Reschedule to a far-future date if you want to "remove" without destroying. |
-| `POST /profiles/{id}/schedules/update` | Changes the posting schedule for a profile/channel. If set incorrectly (e.g., empty schedule), all queued posts will never be published. | NO — can fix schedule, but missed posting windows are gone | Review current schedule before modifying. Never set an empty schedule. |
-| `POST /profiles/{id}/updates/reorder` | Reorders the posting queue. Can accidentally move time-sensitive content to wrong slots. | NO — can reorder again | Verify the full queue order before committing. |
-| `POST /profiles/{id}/updates/shuffle` | **Randomly shuffles all posts in the queue.** Any carefully planned content calendar is destroyed. Time-sensitive posts land on random dates. | NO — can manually reorder, but the original order is lost | Never call this on a production queue. Only use on test profiles. |
-
-### Channel Management Risks
-
-| Action | Risk | Mitigation |
-|--------|------|------------|
-| Disconnecting a social channel | ALL scheduled posts for that channel are permanently deleted. Reconnecting creates a fresh profile with empty queue. | Export all scheduled posts before disconnecting. |
-| Reconnecting a channel | Creates a new profile ID. All automations, webhooks, and integrations referencing the old profile ID break. | Update all integrations after reconnecting. |
-| OAuth token expiry | Buffer cannot post if the OAuth token for the social platform expires. Posts silently fail. | Monitor for failed posts. Re-authenticate promptly. |
-
-### Unexpected Behaviors
-- **Buffer does not retry failed posts.** If a post fails (API error, token expiry, rate limit on the social platform), it moves to "Failed" status. It will NOT automatically retry.
-- **Sent posts can be deleted from Buffer but not from the social platform.** Deleting a sent update in Buffer removes it from Buffer's analytics but the post remains live on Twitter/LinkedIn/etc.
-- **Queue is FIFO.** The posting schedule determines when Buffer picks the next item from the queue. If you reorder posts, they publish at the next available schedule slot — not at the time originally intended.
-- **Multi-image posts have platform-specific limits.** Buffer silently drops excess images rather than erroring. You may think you posted a carousel but only 1 image went out.
-- **Analytics retention varies by plan.** Free plans retain 30 days of analytics. Deleting a post loses analytics immediately. Paid plans retain longer but deletion still destroys post-level analytics.
-
----
-
-## 2. Ahrefs (api.ahrefs.com)
+## 1. Ahrefs (api.ahrefs.com)
 
 **Auth:** API token in `Authorization: Bearer {token}`
 **Base URL:** `https://api.ahrefs.com/v3`
@@ -99,7 +64,7 @@ Ahrefs API is entirely read-only. There are no endpoints that modify, create, or
 
 ---
 
-## 3. SEMrush (api.semrush.com)
+## 2. SEMrush (api.semrush.com)
 
 **Auth:** API key as query parameter `key={api_key}`
 **Base URL:** `https://api.semrush.com`
@@ -138,7 +103,7 @@ SEMrush API is read-only. No data modification, creation, or deletion endpoints.
 
 ---
 
-## 4. Webflow (api.webflow.com)
+## 3. Webflow (api.webflow.com)
 
 **Auth:** API token or OAuth2 in `Authorization: Bearer {token}`
 **Base URL:** `https://api.webflow.com/v2`
@@ -182,7 +147,7 @@ SEMrush API is read-only. No data modification, creation, or deletion endpoints.
 
 ---
 
-## 5. Google Search Console API (searchconsole.googleapis.com)
+## 4. Google Search Console API (searchconsole.googleapis.com)
 
 **Auth:** OAuth2 with `https://www.googleapis.com/auth/webmasters` scope
 **Base URL:** `https://searchconsole.googleapis.com`
@@ -223,10 +188,9 @@ SEMrush API is read-only. No data modification, creation, or deletion endpoints.
 
 ## Cross-Platform Safety Rules for WEB:OS
 
-1. **Before any publish action (Webflow, Buffer):** Always preview the content in staging/draft first. Never auto-publish untested content.
+1. **Before any publish action (Webflow):** Always preview content in staging/draft first. Never auto-publish untested content.
 2. **Before any URL removal (Search Console):** Verify the URL genuinely needs removal. Check organic traffic to the URL. Understand that recovery takes weeks.
 3. **Credit-intensive tools (Ahrefs, SEMrush):** Always check remaining credits before queries. Start with small limits and scale up. Cache results for at least 7 days.
 4. **CMS deletions (Webflow):** Always use draft/archive status changes instead of DELETE. Set up 301 redirects before removing published content.
-5. **Content calendar (Buffer):** Never disconnect a channel without exporting all scheduled posts. Never shuffle a production queue.
-6. **SEO data integrity:** Never delete a Search Console property. Performance data has a 16-month retention window — gaps cannot be recovered.
-7. **Log everything:** Every destructive API call should be logged in `logs/decisions.md` with: timestamp, endpoint, parameters, blast radius assessment, and the reason for the action.
+5. **SEO data integrity:** Never delete a Search Console property. Performance data has a 16-month retention window — gaps cannot be recovered.
+6. **Log everything:** Every destructive API call should be logged in `logs/decisions.md` with: timestamp, endpoint, parameters, blast radius assessment, and the reason for the action.

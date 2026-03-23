@@ -12,7 +12,7 @@ Workspace: $ARGUMENTS
 <process>
 1. Display mode header: `<< WEB:OS // DASHBOARD >>`
 2. Load workspace: PERFORMANCE.md, CALENDAR.md, CHANNELS.md, SEO-STRATEGY.md, ROADMAP.md, LEARNINGS.md
-3. Pull metrics from connected tools (Search Console, social APIs, newsletter platform)
+3. Pull metrics from connected tools (Search Console, CMS, analytics platforms)
 4. Display comprehensive dashboard:
 
 ```
@@ -20,8 +20,8 @@ Workspace: $ARGUMENTS
   │                                                  │
   │  TRAFFIC                                        │
   │  Organic: {n} sessions ({trend})                │
-  │  Social: {n} sessions ({trend})                 │
-  │  Newsletter: {n} clicks ({trend})               │
+  │  Direct: {n} sessions ({trend})                 │
+  │  Referral: {n} sessions ({trend})               │
   │  Total: {n} ({trend})                           │
   │                                                  │
   │  CONTENT                                        │
@@ -34,15 +34,10 @@ Workspace: $ARGUMENTS
   │  Top 10 keywords: {n} ({+/-n})                  │
   │  Avg position: {n} ({trend})                    │
   │                                                  │
-  │  SOCIAL                                         │
-  │  Followers: {n} ({+/-n})                        │
-  │  Avg engagement: {n}% ({trend})                 │
-  │  Best post: {title} ({metric})                  │
-  │                                                  │
-  │  NEWSLETTER                                     │
-  │  Subscribers: {n} ({+/-n})                      │
-  │  Avg open rate: {n}%                            │
-  │  Avg CTR: {n}%                                  │
+  │  PAGES                                          │
+  │  Indexed: {n} ({+/-n})                          │
+  │  Avg page speed: {n}s ({trend})                 │
+  │  Core Web Vitals: {pass/fail}                   │
   │                                                  │
   │  ROADMAP TO-DOS                                 │
   │  • {top 3 to-dos}                               │

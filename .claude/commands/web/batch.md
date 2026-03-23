@@ -1,7 +1,7 @@
 ---
 name: web:batch
 description: Batch content creation at scale
-argument-hint: "<workspace-name> [--type social|blog-outlines|newsletters] [--count N]"
+argument-hint: "<workspace-name> [--type blog-outlines|landing-pages|optimizations] [--count N]"
 ---
 <objective>
 Create content in batches. Multiple pieces at once for efficiency.
@@ -18,10 +18,10 @@ Workspace: $ARGUMENTS
 1. Display mode header: `<< WEB:OS // BATCH >>`
 2. Load workspace: BRAND.md, TOV.md, AUDIENCE.md, PILLARS.md, CALENDAR.md, LEARNINGS.md
 3. Ask what to batch:
-   - Social posts (week/month of content)
    - Blog outlines (from keyword clusters)
-   - Newsletter editions (month ahead)
-   - Repurposed variants (one piece → many channels)
+   - Landing pages (from campaign briefs)
+   - SEO optimizations (existing pages needing updates)
+   - Repurposed variants (one piece → multiple web formats)
 
 4. Scale mode (if count >25):
 ```

@@ -25,10 +25,10 @@ Operation and workspace: $ARGUMENTS
 - Each agent gets: BRAND.md, TOV.md, one brief, relevant pillar from CONTENT-PILLARS.md
 - Collect all drafts, present for batch review
 
-### /web:swarm repurpose
-- Take one piece of content, repurpose for all platforms in parallel
-- Each agent handles one platform (blog → LinkedIn, Twitter, newsletter, etc.)
-- Collect all versions, present together
+### /web:swarm optimize
+- Optimize multiple pages in parallel for SEO
+- Each agent optimizes one page (meta, internal links, content gaps)
+- Compile all optimizations for batch review
 
 ### /web:swarm seo-audit
 - Audit multiple pages/posts in parallel

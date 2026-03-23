@@ -55,14 +55,13 @@ Use for workflow transitions. WEB:OS uses angle brackets.
 - `OPTIMIZE`
 - `CLUSTER`
 - `CALENDAR`
-- `SOCIAL`
-- `COMMUNITY`
+- `SITE HEALTH`
 - `TRENDS`
 - `COMPETITOR`
 - `ANALYTICS`
 - `REPORT`
 - `DEBRIEF`
-- `NEWSLETTER`
+- `INTERNAL LINKS`
 - `DASHBOARD`
 - `PORTFOLIO`
 - `SWARM`

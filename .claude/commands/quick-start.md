@@ -13,7 +13,7 @@ Save to: `workspace.config.md`
 Save to: `AUDIENCE.md`
 
 ## Block 3 — Channels
-"Where do you publish? (blog, social, newsletter, video)"
+"Where do you publish? (blog, landing pages, docs, knowledge base)"
 
 Save to: `CHANNELS.md`
 

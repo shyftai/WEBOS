@@ -19,7 +19,6 @@ Workspace name: $ARGUMENTS
 
   >> Content Creator / Writer — I write the content
   >> Content Strategist — I plan what gets written
-  >> Social Media Manager — I own social channels
   >> SEO Specialist — I drive organic growth
   >> Head of Content — I manage the content team and strategy
   >> Agency — I manage content for multiple brands
@@ -28,8 +27,7 @@ Workspace name: $ARGUMENTS
 3. Store role in workspace.config.md. Adjust depth:
    - **Content Creator:** Focus on writing, briefs, TOV. Skip deep SEO setup.
    - **Content Strategist:** Full depth on pillars, calendar, measurement.
-   - **Social Media Manager:** Focus on channels, scheduling, community. Lighter on blog/SEO.
-   - **SEO Specialist:** Deep on SEO strategy, keywords, technical. Lighter on social.
+   - **SEO Specialist:** Deep on SEO strategy, keywords, technical.
    - **Head of Content:** Everything — full depth, team features, reporting.
    - **Agency:** Multi-brand setup, portfolio view, templates.
 
@@ -50,7 +48,6 @@ Workspace name: $ARGUMENTS
    Role-based defaults:
    - **Content Creator** → suggest auto (they want speed)
    - **Content Strategist** → default interactive (strategy needs precision)
-   - **Social Media Manager** → suggest auto (high-volume output)
    - **SEO Specialist** → default interactive (technical decisions need review)
    - **Head of Content** → default interactive (reviewing strategy)
    - **Agency** → default interactive (client work needs checkpoints)
@@ -106,12 +103,12 @@ Workspace name: $ARGUMENTS
 
 ## Block 6: Channels
 11. Guided interview to fill CHANNELS.md:
-   - Active channels and platforms
-   - Posting frequency per channel
-   - Content types per channel
-   - Primary metrics per channel
+   - Active web properties and CMS platforms
+   - Publishing frequency per property
+   - Content types per property
+   - Primary metrics per property
 
-## Block 7: SEO (skip for Social Media Manager role)
+## Block 7: SEO
 12. Guided interview to fill SEO-STRATEGY.md:
     - Domain and current metrics
     - Initial keyword clusters

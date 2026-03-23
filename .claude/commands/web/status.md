@@ -24,7 +24,6 @@ Display all available WEB:OS commands with descriptions.
   │  CREATE                                        │
   │  /web:brief       Create content brief       │
   │  /web:write       Write from brief           │
-  │  /web:repurpose   Transform across channels  │
   │  /web:batch       Batch content creation     │
   │                                                 │
   │  SEO                                           │
@@ -33,13 +32,17 @@ Display all available WEB:OS commands with descriptions.
   │  /web:optimize    Optimize existing content   │
   │  /web:cluster     Topic cluster management    │
   │                                                 │
+  │  TECHNICAL                                     │
+  │  /web:vitals      Core Web Vitals audit      │
+  │  /web:crawl       Crawl health & indexing    │
+  │  /web:links       Internal link analysis     │
+  │                                                 │
   │  PUBLISH                                       │
   │  /web:publish     Publish or schedule         │
   │  /web:calendar    Content calendar            │
   │                                                 │
-  │  SOCIAL                                        │
-  │  /web:social      Social media content        │
-  │  /web:community   Community engagement        │
+  │  CONVERT                                       │
+  │  /web:convert     CRO & landing page audit   │
   │                                                 │
   │  INTEL                                         │
   │  /web:trends      Trending topics             │
@@ -58,7 +61,6 @@ Display all available WEB:OS commands with descriptions.
   │  /web:swarm       Parallel agent operations    │
   │                                                 │
   │  OTHER                                         │
-  │  /web:newsletter  Email newsletter content     │
   │  /web:portfolio   Multi-brand dashboard        │
   │  /web:feedback    Feedback, bugs, requests     │
   │  /web:status      This command list            │

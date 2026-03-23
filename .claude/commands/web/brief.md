@@ -1,7 +1,7 @@
 ---
 name: web:brief
 description: Create a content brief for any piece
-argument-hint: "<workspace-name> <topic-or-title> [--channel blog|social|newsletter]"
+argument-hint: "<workspace-name> <topic-or-title> [--type blog|landing|case-study|docs|comparison|pillar]"
 ---
 <objective>
 Create a structured content brief. Every piece of content starts here. No writing without a brief.
@@ -17,12 +17,12 @@ Workspace and topic: $ARGUMENTS
 
 <process>
 1. Display mode header: `<< WEB:OS // BRIEF >>`
-2. Load workspace: BRAND.md, AUDIENCE.md, PILLARS.md, TOV.md, CHANNELS.md, SEO-STRATEGY.md, LEARNINGS.md
+2. Load workspace: BRAND.md, AUDIENCE.md, PILLARS.md, TOV.md, SEO-STRATEGY.md, SITE-ARCHITECTURE.md, LEARNINGS.md
 
 3. Gather brief inputs (ask if not provided):
    - **Topic/title:** What is this about?
-   - **Channel:** Where will this live? (blog, LinkedIn, newsletter, etc.)
-   - **Content type:** Article, how-to, case study, listicle, opinion, thread, carousel, etc.
+   - **Page type:** What kind of web page? (blog post, landing page, case study, docs, comparison, pillar, FAQ, glossary)
+   - **Content type:** Article, how-to, guide, tutorial, case study, listicle, comparison, FAQ, etc.
    - **Target audience:** Which audience segment?
    - **Content pillar:** Which pillar does this map to?
    - **Goal:** What should this content achieve? (traffic, engagement, leads, authority)
@@ -39,7 +39,7 @@ Workspace and topic: $ARGUMENTS
   ┌─ CONTENT BRIEF ────────────────────────────────┐
   │                                                 │
   │  Title: {working title}                         │
-  │  Channel: {channel}                             │
+  │  Page type: {page type}                          │
   │  Type: {content type}                           │
   │  Pillar: {content pillar}                       │
   │  Audience: {segment}                            │

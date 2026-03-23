@@ -1,6 +1,6 @@
 # WEB:OS Intake Interview
 
-Structured onboarding interview for content workspaces. Ask one block at a time.
+Structured onboarding interview for web content workspaces. Ask one block at a time.
 
 ## Block 1 — Brand & Product
 - Company name and what you do?
@@ -9,10 +9,11 @@ Structured onboarding interview for content workspaces. Ask one block at a time.
 
 Save to: `workspace.config.md`
 
-## Block 2 — Content Channels
-- Active channels? (blog, social, newsletter, podcast, video, docs)
-- Primary channel?
-- Publishing frequency per channel?
+## Block 2 — Web Properties
+- Website URL?
+- CMS? (Webflow, WordPress, Ghost, headless)
+- Blog? Documentation? Resource hub?
+- Publishing frequency?
 
 Save to: `CHANNELS.md`
 
@@ -36,43 +37,46 @@ Save to: `TOV.md`
 - SEO competitors?
 - Search Console connected?
 
-Save to: `SEO.md`
+Save to: `SEO-STRATEGY.md`
 
-## Block 6 — Content Calendar
+## Block 6 — Site Architecture
+- URL structure? (do you have one, or need one?)
+- Topic clusters defined?
+- Internal linking strategy?
+- Sitemap submitted to GSC?
+
+Save to: `SITE-ARCHITECTURE.md`
+
+## Block 7 — Content Calendar
 - Publishing cadence? (daily, 3x/week, weekly)
 - Seasonal themes or tentpole events?
 - Content pillars? (topics you always cover)
 
 Save to: `CALENDAR.md`
 
-## Block 7 — Tools
-- CMS? (WordPress, Webflow, Ghost, Notion)
-- SEO tools? (Ahrefs, SEMrush, Surfer)
-- Social scheduling? (Buffer, Hootsuite, Later)
+## Block 8 — Tools
+- CMS? (WordPress, Webflow, Ghost)
+- SEO tools? (Ahrefs, SEMrush, DataforSEO)
 - Analytics? (GA4, Plausible, Fathom)
+- Search Console connected?
 
-Save to: `TOOLS.md`
+Save to: `COSTS.md`
 
-## Block 8 — Existing Content
-- Best performing pieces? (top 3 by traffic or engagement)
+## Block 9 — Existing Content
+- Best performing pages? (top 3 by traffic or conversion)
 - Content audit done recently?
 - Content library size? (blog posts, pages)
+- Core Web Vitals status?
 
-Save to: `AUDIT.md`
-
-## Block 9 — Distribution
-- Organic distribution strategy?
-- Paid amplification? (social ads, sponsored)
-- Syndication? (Medium, LinkedIn articles, newsletters)
-
-Save to: `DISTRIBUTION.md`
+Save to: `PERFORMANCE.md`
 
 ## Block 10 — Goals
-- Traffic targets? (monthly visitors)
+- Traffic targets? (monthly organic visitors)
 - Lead generation from content?
-- Engagement metrics? (time on page, shares, comments)
+- Keyword ranking targets?
+- Conversion targets by page type?
 
 Save to: `ROADMAP.md`
 
 ---
-After all blocks: display summary, suggest `/web:calendar` or `/web:audit`.
+After all blocks: display summary, suggest `/web:seo-audit` or `/web:calendar`.

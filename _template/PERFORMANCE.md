@@ -4,41 +4,53 @@
 
 | Metric | Current | Target | Trend |
 |--------|---------|--------|-------|
-| Monthly organic traffic | | | |
-| Avg engagement rate | | | |
-| Newsletter subscribers | | | |
-| Newsletter open rate | | | |
-| Social followers (total) | | | |
+| Monthly organic sessions | | | |
+| Keywords in top 10 | | | |
+| Domain authority / DR | | | |
+| Blog conversion rate | | | |
+| Landing page conversion rate | | | |
+| Pages indexed | | | |
 | Content pieces published/month | | | |
 | Leads from content | | | |
 
-## Channel performance
+## Web performance
 
-### Blog
-| Month | Sessions | Avg time | Bounce rate | Conversions |
-|-------|----------|----------|-------------|-------------|
-| | | | | |
+### Organic traffic
+| Month | Sessions | Unique visitors | Pages/session | Bounce rate | Conversions |
+|-------|----------|----------------|---------------|-------------|-------------|
+| | | | | | |
 
-### LinkedIn
-| Month | Impressions | Engagement rate | Followers gained | Profile visits |
-|-------|-------------|----------------|-----------------|---------------|
-| | | | | |
+### SEO progress
+| Month | Keywords top 10 | Keywords top 3 | New rankings | Lost rankings | Avg position |
+|-------|----------------|----------------|-------------|--------------|-------------|
+| | | | | | |
 
-### Newsletter
-| Month | Subscribers | Open rate | CTR | Unsubscribes |
-|-------|------------|-----------|-----|-------------|
-| | | | | |
+### Core Web Vitals
+| Metric | Score | Status | Last checked |
+|--------|-------|--------|-------------|
+| LCP | | | |
+| INP | | | |
+| CLS | | | |
+
+### Conversion by page type
+| Page type | Sessions | Conversions | CVR | Trend |
+|-----------|----------|-------------|-----|-------|
+| Blog posts | | | | |
+| Landing pages | | | | |
+| Case studies | | | | |
+| Docs | | | | |
+| Comparison pages | | | | |
 
 ## Top performing content
 
-| # | Title | Channel | Metric | Performance | Why it worked |
-|---|-------|---------|--------|-------------|--------------|
+| # | Title | Page type | Metric | Performance | Why it worked |
+|---|-------|-----------|--------|-------------|--------------|
 | 1 | | | | | |
 | 2 | | | | | |
 | 3 | | | | | |
 
 ## Underperforming content
 
-| # | Title | Channel | Expected | Actual | Hypothesis |
-|---|-------|---------|----------|--------|-----------|
+| # | Title | Page type | Expected | Actual | Hypothesis |
+|---|-------|-----------|----------|--------|-----------|
 | 1 | | | | | |

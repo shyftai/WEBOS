@@ -21,12 +21,12 @@
 |-------|----------|-------------------|
 | **magenta** | Research | Keyword research, topic research, competitor content |
 | **cyan** | Planning / Verification | Content brief, SEO audit, quality check |
-| **green** | Execution | Content writing, social posts, newsletter drafts |
+| **green** | Execution | Content writing, page creation, site updates |
 | **red** | Debugging | Ranking drops, traffic anomalies, broken links |
 | **yellow** | Strategy / Synthesis | Content report, performance synthesis, calendar planning |
-| **blue** | Integration | CMS sync, Search Console, social analytics |
+| **blue** | Integration | CMS sync, Search Console, web analytics |
 
 ## Progress / Context / Next Up
 
 Context: show remaining % at milestones. Warn below 30%.
-Checkpoint types: Publish Review, Distribution Approval.
+Checkpoint types: Publish Review, Deployment Approval.

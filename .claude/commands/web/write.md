@@ -1,7 +1,7 @@
 ---
 name: web:write
 description: Write content from a brief or prompt
-argument-hint: "<workspace-name> <brief-name-or-topic> [--channel blog|linkedin|twitter|newsletter]"
+argument-hint: "<workspace-name> <brief-name-or-topic> [--type blog|landing|case-study|docs|comparison|pillar]"
 ---
 <objective>
 Write content. Always from a brief (create one if needed). Match brand voice, audience, and channel specs.
@@ -37,7 +37,8 @@ Workspace and brief: $ARGUMENTS
    - [ ] SEO check — keyword, meta, headings, links (if applicable)
    - [ ] Readability — sentence length, jargon, clarity
    - [ ] Source check — claims cited, no fabrication
-   - [ ] Channel check — formatted for target channel
+   - [ ] Page type check — formatted for target page type
+   - [ ] Internal link check — 3-5 internal links, no orphan page
 
 7. Display the draft with quality gate results
 8. Check execution mode from workspace.config.md:
@@ -45,5 +46,5 @@ Workspace and brief: $ARGUMENTS
    - **Auto:** Auto-approve, save to content/approved/, show `⚡ Auto-approved: content saved`, log in logs/decisions.md
 9. Save approved content to content/approved/
 10. Update CALENDAR.md and ROADMAP.md
-11. Suggest: `>> /web:repurpose — transform for other channels`
+11. Suggest: `>> /web:publish — publish to CMS` or `>> /web:optimize — SEO optimization pass`
 </process>

@@ -1,73 +1,121 @@
-# Content Frameworks
+# Content Frameworks — Web Pages
 
-Proven frameworks for structuring content. Use these as starting points, not rigid templates.
+Proven frameworks for structuring web content. Use these as starting points, not rigid templates.
 
 ## AIDA — Attention, Interest, Desire, Action
-Best for: Landing pages, sales content, LinkedIn posts
+Best for: Landing pages, product pages, pricing pages
 
-1. **Attention:** Bold statement, surprising stat, provocative question
+1. **Attention:** Bold headline with a specific benefit or surprising stat
 2. **Interest:** Why this matters to the reader specifically
-3. **Desire:** Paint the outcome, show proof
-4. **Action:** Clear CTA
+3. **Desire:** Paint the outcome, show proof (testimonials, data)
+4. **Action:** Clear CTA — one action, prominent placement
 
 ## PAS — Problem, Agitate, Solution
-Best for: Blog intros, email openers, social posts
+Best for: Blog intros, feature pages, solution pages
 
-1. **Problem:** State the pain point
+1. **Problem:** State the pain point the reader is searching for
 2. **Agitate:** Make it feel urgent — what happens if unsolved?
-3. **Solution:** Present your answer
+3. **Solution:** Present your answer with specifics
 
 ## BAB — Before, After, Bridge
-Best for: Case studies, transformation stories
+Best for: Case studies, transformation stories, solution pages
 
-1. **Before:** Current state (the struggle)
-2. **After:** Desired state (the win)
-3. **Bridge:** How to get there (your solution)
+1. **Before:** Current state (the struggle, with specifics)
+2. **After:** Desired state (the win, with metrics)
+3. **Bridge:** How to get there (your product/service)
 
 ## Skyscraper
-Best for: SEO content, authoritative guides
+Best for: SEO content, authoritative guides, pillar pages
 
-1. Find the top-ranking content for your keyword
-2. Make something 10x better (more depth, fresher data, better format)
-3. Reach out to people who linked to the original
+1. Find the top-ranking content for your target keyword
+2. Identify gaps (outdated data, missing sections, poor structure)
+3. Create something 10x better (more depth, fresher data, better format)
+4. Build internal links from existing cluster content
 
-## Content Cluster
-Best for: Building topical authority, SEO
+## Topic Cluster
+Best for: Building topical authority, dominating a keyword space
 
-1. Create pillar page (broad overview)
-2. Create cluster pages (specific subtopics)
-3. Interlink everything
-4. Update regularly
+```
+         [PILLAR PAGE]
+         (broad topic, high volume)
+              │
+    ┌─────────┼─────────┐
+    │         │         │
+[CLUSTER]  [CLUSTER]  [CLUSTER]
+(subtopic) (subtopic) (subtopic)
+    │         │         │
+[SUPPORT] [SUPPORT] [SUPPORT]
+(long-tail) (long-tail) (long-tail)
+```
 
-## The 1-3-1 (Newsletter)
-Best for: Email newsletters
+1. Create pillar page (comprehensive overview, 2,000-4,000 words)
+2. Create cluster pages (deep dives on subtopics, 1,500-2,500 words)
+3. Create support pages (specific long-tail queries, 800-1,500 words)
+4. Interlink everything — pillar links to clusters, clusters link to pillar
+5. Update pillar quarterly, clusters as needed
 
-1. **1 big idea** — the main feature
-2. **3 quick hits** — curated links or short insights
-3. **1 CTA** — what the reader should do
+## Landing Page Framework
+Best for: Conversion pages, campaign destinations, product launches
 
-## Hot Take Framework
-Best for: LinkedIn, Twitter, thought leadership
+1. **Hero:** Headline + subheadline + CTA + hero image (above fold)
+2. **Social proof bar:** Logos, "trusted by X companies", or key stat
+3. **Problem section:** 2-3 pain points the audience recognizes
+4. **Solution section:** How your product solves each pain point
+5. **Benefits grid:** 3-4 key benefits with icons and short descriptions
+6. **Proof section:** Testimonials, case study stats, or demo
+7. **CTA section:** Repeat the primary CTA with urgency
+8. **FAQ:** Handle remaining objections
 
-1. **Contrarian claim** — challenge conventional wisdom
-2. **Evidence** — back it up with experience or data
-3. **Nuance** — acknowledge when it doesn't apply
-4. **Takeaway** — what to do differently
+## Comparison Page Framework
+Best for: Commercial intent keywords, "{X} vs {Y}", alternatives pages
 
-## Tutorial Framework
-Best for: How-to content, guides
+1. **TL;DR verdict** — Don't make them scroll. State your recommendation upfront.
+2. **Criteria** — How you're evaluating (transparency builds trust)
+3. **Comparison table** — Feature-by-feature, honest checkmarks
+4. **Deep dive** — 3-5 most important differentiators expanded
+5. **Verdict by use case** — "Choose X if..., Choose Y if..."
+6. **FAQ** — Address remaining questions
+7. **CTA** — Trial or demo for the recommended option
 
-1. **Outcome** — what they'll be able to do after
-2. **Prerequisites** — what they need before starting
-3. **Steps** — numbered, clear, with screenshots/examples
-4. **Common mistakes** — what to watch out for
-5. **Next steps** — where to go from here
+## Feature Page Framework
+Best for: Product feature pages, solution pages
 
-## Comparison Framework
-Best for: Commercial intent keywords, buying guides
+1. **Headline:** Outcome-driven ("Get paid faster" not "Invoice module")
+2. **Visual:** Screenshot or GIF showing the feature in action
+3. **Problem:** The specific pain this feature eliminates
+4. **How it works:** 3 steps, simple, with visuals
+5. **Details:** Feature specifics for evaluators who need depth
+6. **Proof:** Quote or stat from a customer using this feature
+7. **CTA:** Try it / See it in action
+8. **Related features:** Cross-link to adjacent feature pages
 
-1. **Context** — why this comparison matters
-2. **Criteria** — how you're evaluating (transparency)
-3. **Comparison** — feature-by-feature, honest
-4. **Verdict** — clear recommendation per use case
-5. **FAQ** — address remaining questions
+## Tutorial / How-to Framework
+Best for: Documentation, knowledge base, how-to guides
+
+1. **Outcome:** What the reader will be able to do after reading
+2. **Prerequisites:** What they need before starting
+3. **Steps:** Numbered, one action per step, with expected output
+4. **Verification:** How to confirm it worked
+5. **Common mistakes:** What to watch out for
+6. **Troubleshooting:** If something goes wrong
+7. **Next steps:** Where to go from here
+
+## FAQ Page Framework
+Best for: Capturing "People also ask" rankings, reducing support load
+
+1. **Group by category** — Don't dump 50 random questions
+2. **Lead with high-search-volume questions** — Check GSC/Ahrefs data
+3. **Answer in 2-4 sentences** — Enough to satisfy, not overwhelm
+4. **Link to deeper content** — FAQ answers are entry points, not endpoints
+5. **Use FAQ schema** — Required for rich snippet eligibility
+6. **Update monthly** — Pull new questions from support tickets and search data
+
+## Resource Hub Framework
+Best for: Gated content, lead generation, content library
+
+1. **Category navigation** — Guides, templates, tools, reports
+2. **Featured resource** — Highlight the highest-converting asset
+3. **Card grid** — Thumbnail + title + description + format badge
+4. **Lead capture** — Gated where appropriate (high-value only)
+5. **Related resources** — Cross-link within and across categories
+6. **Fresh content flag** — "New" badge on recent additions

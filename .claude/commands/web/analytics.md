@@ -1,50 +1,55 @@
 ---
 name: web:analytics
-description: Pull and analyze content metrics
-argument-hint: "<workspace-name> [--period 7d|30d|90d] [--channel all|blog|social|newsletter]"
+description: Pull and analyze web traffic and content metrics
+argument-hint: "<workspace-name> [--period 7d|30d|90d]"
 ---
 <objective>
-Pull metrics from connected tools and analyze content performance.
+Pull metrics from connected tools and analyze web content performance.
 
 Workspace: $ARGUMENTS
 </objective>
 
 <process>
 1. Display mode header: `<< WEB:OS // ANALYTICS >>`
-2. Load workspace: PERFORMANCE.md, CHANNELS.md, SEO-STRATEGY.md, CALENDAR.md
+2. Load workspace: PERFORMANCE.md, SEO-STRATEGY.md, SITE-ARCHITECTURE.md, CALENDAR.md
 3. Pull data from available tools:
    - Search Console → organic traffic, keywords, CTR, position
    - Google Analytics → sessions, engagement, conversions
-   - Social APIs → followers, engagement, reach
-   - Newsletter platform → subscribers, opens, clicks
    - Ahrefs/SEMrush → rankings, backlinks, DR
+   - PageSpeed → Core Web Vitals
 
 4. Analyze:
    - **Trends:** What's going up/down vs previous period
    - **Top performers:** Best content by each metric
    - **Underperformers:** Content below benchmark
-   - **Opportunities:** Where to double down
+   - **SEO progress:** Ranking changes, new keywords, lost positions
+   - **Conversion:** Which pages drive the most leads/conversions
    - **Alerts:** Significant drops or spikes
 
 5. Display:
 ```
   ┌─ ANALYTICS ─── {period} ───────────────────────┐
   │                                                  │
-  │  OVERVIEW                                       │
-  │  Total reach: {n} ({trend})                     │
-  │  Total engagement: {n} ({trend})                │
-  │  New subscribers: {n} ({trend})                 │
-  │  Content published: {n}                         │
+  │  ORGANIC TRAFFIC                                │
+  │  Sessions:    {n} ({trend} vs prior period)      │
+  │  Visitors:    {n} ({trend})                      │
+  │  Pages/session: {n}    Bounce: {n}%              │
+  │  Conversions: {n}      CVR: {n}%                 │
   │                                                  │
-  │  BY CHANNEL                                     │
-  │  Blog: {sessions} ({trend}) | Top: {title}      │
-  │  LinkedIn: {impressions} ({trend}) | Top: {post} │
-  │  Newsletter: {opens} ({trend}) | Open: {rate}    │
-  │  Twitter: {impressions} ({trend}) | Top: {post}  │
+  │  SEO SNAPSHOT                                   │
+  │  Keywords top 10: {n} ({+/-n})                   │
+  │  Keywords top 3:  {n} ({+/-n})                   │
+  │  Avg position:    {n} ({+/-n})                   │
+  │  Domain rating:   {n}                            │
+  │                                                  │
+  │  BY PAGE TYPE                                   │
+  │  Blog:      {sessions} ({trend}) | Top: {title}  │
+  │  Landing:   {sessions} ({trend}) | CVR: {rate}   │
+  │  Docs:      {sessions} ({trend}) | Top: {title}  │
   │                                                  │
   │  BY PILLAR                                      │
-  │  {Pillar 1}: {n} pieces, {avg engagement}        │
-  │  {Pillar 2}: {n} pieces, {avg engagement}        │
+  │  {Pillar 1}: {n} pages, {sessions}, {cvr}%       │
+  │  {Pillar 2}: {n} pages, {sessions}, {cvr}%       │
   │                                                  │
   │  INSIGHTS                                       │
   │  • {actionable insight}                          │
